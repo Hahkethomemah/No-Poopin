@@ -1,0 +1,46 @@
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="SP_Hediff_AnimalKind"]</xpath>
+		<value>
+                  <stages>
+                        <li>
+                          <statOffsets>
+                              <FilthRate>-100</FilthRate>
+                          </statOffsets>
+                        </li>
+                      </stages>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="SP_Hediff_AnimalIntense"]</xpath>
+		<value>
+                  <stages>
+                        <li>
+                          <statOffsets>
+                              <FilthRate>-100</FilthRate>
+                          </statOffsets>
+                        </li>
+                      </stages>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="SP_Hediff_AnimalEnergetic"]/stages/li/statOffsets</xpath>
+		<value>
+      <FilthRate>-100</FilthRate>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="SP_Hediff_AnimalCalm"]/stages/li</xpath>
+		<value>
+                          <statOffsets>
+                              <FilthRate>-100</FilthRate>
+                          </statOffsets>
+		</value>
+	</Operation>
+
+
+</Patch>
